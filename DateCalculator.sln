@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31402.337
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DateCalculator", "DateCalculator\DateCalculator.csproj", "{98612982-B802-44C2-B609-1BF42E1C98C9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1654DC6B-DE11-4535-A5B4-C7477EAE2D14}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{98612982-B802-44C2-B609-1BF42E1C98C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98612982-B802-44C2-B609-1BF42E1C98C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98612982-B802-44C2-B609-1BF42E1C98C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98612982-B802-44C2-B609-1BF42E1C98C9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {84CC4944-EB05-4275-89D9-66D25EE60B1B}
+	EndGlobalSection
+EndGlobal
