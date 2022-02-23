@@ -10,7 +10,7 @@ namespace DateCalculator {
 
             Calculate calculate = new Calculate();
 
-            start:
+        start:
             Console.Clear();
             Console.WriteLine("||------------||");
             Console.WriteLine("|| 1 - Years  ||");
@@ -19,33 +19,41 @@ namespace DateCalculator {
             Console.WriteLine("|| 4 - Days   ||");
             Console.WriteLine("||------------||");
 
-            Console.WriteLine();
-            Console.Write("Choice: ");
-            ch = char.Parse(Console.ReadLine());
-            Console.WriteLine();
+            try {
+                Console.WriteLine();
+                Console.Write("Choice: ");
+                ch = char.Parse(Console.ReadLine());
+                Console.WriteLine();
 
-            if (ch == '1') {
-                Console.Write("Years: ");
-                value = double.Parse(Console.ReadLine());
-                calculate.Calc(value, ch);
+                if (ch == '1') {
+                    Console.Write("Years: ");
+                    value = double.Parse(Console.ReadLine());
+                    calculate.Calc(value, ch);
+                }
+                else if (ch == '2') {
+                    Console.Write("Months: ");
+                    value = double.Parse(Console.ReadLine());
+                    calculate.Calc(value, ch);
+                }
+                else if (ch == '3') {
+                    Console.Write("Weeks: ");
+                    value = double.Parse(Console.ReadLine());
+                    calculate.Calc(value, ch);
+                }
+                else if (ch == '4') {
+                    Console.Write("Days: ");
+                    value = double.Parse(Console.ReadLine());
+                    calculate.Calc(value, ch);
+                }
+                else {
+                    MessageBox.Show("Wrong choice, try again with 1 or 2 or 3 or 4", "Error");
+                    
+                    goto start;
+                }
             }
-            else if (ch == '2') {
-                Console.Write("Months: ");
-                value = double.Parse(Console.ReadLine());
-                calculate.Calc(value, ch);
-            }
-            else if (ch == '3') {
-                Console.Write("Weeks: ");
-                value = double.Parse(Console.ReadLine());
-                calculate.Calc(value, ch);
-            }
-            else if (ch == '4') {
-                Console.Write("Days: ");
-                value = double.Parse(Console.ReadLine());
-                calculate.Calc(value, ch);
-            }
-            else {
-                MessageBox.Show("Wrong number, try again");
+            catch (Exception error) {
+                MessageBox.Show(error.Message + " Try again", "Ops, something went wrong");
+                goto start;
             }
 
             Console.WriteLine(calculate);
